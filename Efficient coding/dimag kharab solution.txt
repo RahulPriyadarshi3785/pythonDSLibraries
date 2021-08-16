@@ -1,0 +1,30 @@
+abxyedcf, abcdedcf	      pomnvzx O(n^2)
+{a:{0},b:{1},c:{2},d:{3,5},e:{4},c:{6},f:{7}}
+-> abcf(4)
+-> abedcf(6)
+
+----------------------------------------
+    ix
+a    0
+b    1
+e    4
+d    3(reject), 5(select)
+c    6
+f    7
+count = 6
+------------------------------------
+{a:{0},b:{1},x:{2},y:{3},e:{5},d:{6},c{7},f{8}}
+O(n)
+	ix
+a	0
+b	1
+c	7
+d	6(reject)
+f	8
+-----------------------------
+
+ABCD,ABDC,0,0
+ABCD,ABDC,1,1
+ABCD,ABDC,2,2
+ABCD,ABDC,3,2	ABCD,ABDC,2,3
+ABCD,ABDC,4,3	ABCD,ABDC,3,4
